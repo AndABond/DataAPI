@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService">
+      <s:element name="SendRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiveReplyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SendRequest" />
+  </wsdl:message>
+  <wsdl:message name="SendRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SendRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveReplySoapIn">
+    <wsdl:part name="parameters" element="tns:ReceiveReply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveReplySoapOut">
+    <wsdl:part name="parameters" element="tns:ReceiveReplyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FeedbackServiceSoap">
+    <wsdl:operation name="SendRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Receives an AOG XML request and forwards it to the appropriate bank.</wsdl:documentation>
+      <wsdl:input message="tns:SendRequestSoapIn" />
+      <wsdl:output message="tns:SendRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveReply">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Receives a feedback reply from bank.</wsdl:documentation>
+      <wsdl:input message="tns:ReceiveReplySoapIn" />
+      <wsdl:output message="tns:ReceiveReplySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FeedbackServiceSoap" type="tns:FeedbackServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendRequest">
+      <soap:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService/SendRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveReply">
+      <soap:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService/ReceiveReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FeedbackServiceSoap12" type="tns:FeedbackServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendRequest">
+      <soap12:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService/SendRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveReply">
+      <soap12:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/FeedbackService/ReceiveReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FeedbackService">
+    <wsdl:port name="FeedbackServiceSoap" binding="tns:FeedbackServiceSoap">
+      <soap:address location="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/FeedbackService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FeedbackServiceSoap12" binding="tns:FeedbackServiceSoap12">
+      <soap12:address location="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/FeedbackService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

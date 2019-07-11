@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService">
+      <s:element name="GetTableValues">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTableValuesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTableValuesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTableValuesZipped">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTableValuesZippedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTableValuesZippedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTableVersionInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTableVersionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTableVersionInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTableValuesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTableValues" />
+  </wsdl:message>
+  <wsdl:message name="GetTableValuesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTableValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTableValuesZippedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTableValuesZipped" />
+  </wsdl:message>
+  <wsdl:message name="GetTableValuesZippedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTableValuesZippedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTableVersionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTableVersionInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTableVersionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTableVersionInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LookupDataServiceSoap">
+    <wsdl:operation name="GetTableValues">
+      <wsdl:input message="tns:GetTableValuesSoapIn" />
+      <wsdl:output message="tns:GetTableValuesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTableValuesZipped">
+      <wsdl:input message="tns:GetTableValuesZippedSoapIn" />
+      <wsdl:output message="tns:GetTableValuesZippedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTableVersionInfo">
+      <wsdl:input message="tns:GetTableVersionInfoSoapIn" />
+      <wsdl:output message="tns:GetTableVersionInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LookupDataServiceSoap" type="tns:LookupDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTableValues">
+      <soap:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService/GetTableValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableValuesZipped">
+      <soap:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService/GetTableValuesZipped" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableVersionInfo">
+      <soap:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService/GetTableVersionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LookupDataServiceSoap12" type="tns:LookupDataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTableValues">
+      <soap12:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService/GetTableValues" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableValuesZipped">
+      <soap12:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService/GetTableValuesZipped" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableVersionInfo">
+      <soap12:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/LookupDataService/GetTableVersionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LookupDataService">
+    <wsdl:port name="LookupDataServiceSoap" binding="tns:LookupDataServiceSoap">
+      <soap:address location="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/LookupDataService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LookupDataServiceSoap12" binding="tns:LookupDataServiceSoap12">
+      <soap12:address location="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/LookupDataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

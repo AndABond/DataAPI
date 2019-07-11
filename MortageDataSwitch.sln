@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortageDataSwitch", "MortageDataSwitch\MortageDataSwitch.csproj", "{EAD666DD-7F8D-4B59-8243-92FD391153A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortageDataSwitchTests", "MortageDataSwitchTests\MortageDataSwitchTests.csproj", "{2B3975DE-46F9-475E-99BA-E003D4B56AD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		UAT|Any CPU = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAD666DD-7F8D-4B59-8243-92FD391153A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD666DD-7F8D-4B59-8243-92FD391153A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD666DD-7F8D-4B59-8243-92FD391153A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD666DD-7F8D-4B59-8243-92FD391153A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD666DD-7F8D-4B59-8243-92FD391153A6}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{EAD666DD-7F8D-4B59-8243-92FD391153A6}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{2B3975DE-46F9-475E-99BA-E003D4B56AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3975DE-46F9-475E-99BA-E003D4B56AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3975DE-46F9-475E-99BA-E003D4B56AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3975DE-46F9-475E-99BA-E003D4B56AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3975DE-46F9-475E-99BA-E003D4B56AD6}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{2B3975DE-46F9-475E-99BA-E003D4B56AD6}.UAT|Any CPU.Build.0 = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {979D979E-AFD5-4428-9724-A8A6CB5C6389}
+	EndGlobalSection
+EndGlobal

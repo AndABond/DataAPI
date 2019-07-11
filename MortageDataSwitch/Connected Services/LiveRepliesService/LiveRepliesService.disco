@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/LiveRepliesService.asmx?wsdl" docRef="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/LiveRepliesService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/LiveRepliesService.asmx" xmlns:q1="http://www.unifiedplatform/Comcorp.WebServices/LiveReplyService" binding="q1:LiveRepliesServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/LiveRepliesService.asmx" xmlns:q2="http://www.unifiedplatform/Comcorp.WebServices/LiveReplyService" binding="q2:LiveRepliesServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-16"?>
+<SubmitApplication.Request>
+  <Service.Header>
+    <Application.Action>New</Application.Action>
+    <Application.ApplicationType>3</Application.ApplicationType>
+    <Application.Mac />
+    <Application.Reference />
+    <Channel.Code>izgfrcWo6UQCJyWjDDbApoz0M6PUkgB+jwiN2NusUQ8/IBjEqdJ5J+Ul0DeHznx3eQUkiTHd1/f/21jHowLnjjeI6wCgTsLYXZk6R7/rkbEGdCyUKEOU7jGVDxznQSMeWss/QC4Q1wyB9AtckWUtl12ciqqokn1AKY0lvDGlqoo=</Channel.Code>
+    <Channel.Password>Wcw9oABdKBD7JeC9CsWlMovVgs/IeewbaCRTOhPv7tEDM5KS6umWRphYb/Xplc7pZwpr61CaN4rtfWt1sq3ZSLp8PaVjCemLMKPlqrzZUzUFL5+/csSAlnOj0qhzQsIEwLBUHgFOLupztheQc2ncU8Eq7X4TI0Lz6J/nfyVl16U=</Channel.Password>
+    <Channel.Username>d9lPK0lwCA4Uy/kTmUvw23mRIIwPF1VuPYyqlXT4NWmCv/c0RiRXYkPZTj1UNYLcqSjt8wUgfnCxXJ48g/A6dln4g2X2jpJCsMmVVMLqK87K1NkLuXkuisxAh85WaGIYl2DYyDYEnVX22TotydN6Twtt5ugYBgKY+OFr+PmKZzQ=</Channel.Username>
+    <Originator.Branch.Id>11787</Originator.Branch.Id>
+    <Originator.Id>10251</Originator.Id>
+    <Originator.Reference />
+    <Request.DateTime>2019-06-11T12:54:31</Request.DateTime>
+    <Service.Key>
+      <RSAKeyValue>
+        <Modulus>kVBsTDIEVMolw4DHZ/fGyOQfECRET70uMgO9Li4oWsOs4A1jy9CYBrzpzzjUZuKuGvt5jkz9wGr1DMz5CbnAeGZF0Ti9wIp0WpfxhgMASsMgau/kGGI8QXra4P/ZSkWYQZ/Lx3bwRbkdlbOyn8RL/Ce1XyjAn2eGws5cwG21LpM=</Modulus>
+        <Exponent>AQAB</Exponent>
+      </RSAKeyValue>
+    </Service.Key>
+    <Service.Version>30</Service.Version>
+    <Application.Group.Id>789169</Application.Group.Id>
+  </Service.Header>
+  <Application.Details>
+    <Applicaion.ABSAIsPrimaryResident>1</Applicaion.ABSAIsPrimaryResident>
+    <Application.ABSABondAttorney />
+    <Application.ABSAComplexName>SS GADSDEN</Application.ABSAComplexName>
+    <Application.ABSAFamilySpringboard>0</Application.ABSAFamilySpringboard>
+    <Application.ABSAFurtherLoanAccountNumber />
+    <Application.ABSAFurtherLoanAmount>850000</Application.ABSAFurtherLoanAmount>
+    <Application.ABSAIsNewDevelopment>0</Application.ABSAIsNewDevelopment>
+    <Application.ABSALoyaltyHomeLoan>0</Application.ABSALoyaltyHomeLoan>
+    <Application.ABSAMyHome>0</Application.ABSAMyHome>
+    <Application.ABSANewDevelopmentRefNum />
+    <Application.ABSANotificationCellPhoneNumber />
+    <Application.ABSANotificationEmailAddress>delmarie@comcorpcoza</Application.ABSANotificationEmailAddress>
+    <Application.ABSANotificationMethodTypeId>2</Application.ABSANotificationMethodTypeId>
+    <Application.ABSAPassword>123456</Application.ABSAPassword>
+    <Application.ABSAPReviousApplicationNumber>0</Application.ABSAPReviousApplicationNumber>
+    <Application.ABSAPropertyType />
+    <Application.ABSAPurposeOfApplication>TLO</Application.ABSAPurposeOfApplication>
+    <Application.ABSAReApplication>0</Application.ABSAReApplication>
+    <Application.ABSASubClassification />
+    <Application.ABSATransferAttorney>ROSE INNES DU PREEZ AND JOUBERT INC</Application.ABSATransferAttorney>
+    <Application.ABSATransferAttorneyCode>00175</Application.ABSATransferAttorneyCode>
+    <Application.ABSATypeOfApplication>Private Individual</Application.ABSATypeOfApplication>
+    <Application.ABSAVendorDescription>INDBOND024</Application.ABSAVendorDescription>
+    <Application.AgencyInvolved>0</Application.AgencyInvolved>
+    <Application.AgencyNotifyEmailAddress />
+    <Application.AgencyNotifyOption>NONE</Application.AgencyNotifyOption>
+    <Application.AgentName>Not Applicable</Application.AgentName>
+    <Application.AIPBanks />
+    <Application.AltPropertyContact />
+    <Application.AmountOfGuarantee>0</Application.AmountOfGuarantee>
+    <Application.ApplicationType>1</Application.ApplicationType>
+    <Application.BondAmountToBeRegistered>850000</Application.BondAmountToBeRegistered>
+    <Application.BondInstitution>FIRST NATIONAL BANK OF SOUTHERN AFRICA LIMITED</Application.BondInstitution>
+    <Application.BondRegistrationLegalCosts>0</Application.BondRegistrationLegalCosts>
+    <Application.CampaignRefNumber />
+    <Application.CashDeposit>650000</Application.CashDeposit>
+    <Application.CellNumberEstateAgency />
+    <Application.ConsultantEmailAddress>delmarie@comcorpcoza</Application.ConsultantEmailAddress>
+    <Application.CurrentBondBalance>500000</Application.CurrentBondBalance>
+    <Application.DebtConsolidationOption>Other</Application.DebtConsolidationOption>
+    <Application.DeclinedBanks />
+    <Application.EmployerHousingScheme>0</Application.EmployerHousingScheme>
+    <Application.EstateAgency>comcorp</Application.EstateAgency>
+    <Application.ExistingHomeLoan>0</Application.ExistingHomeLoan>
+    <Application.FirstPropertyPurchase>0</Application.FirstPropertyPurchase>
+    <Application.FixedRateTerm />
+    <Application.FlexiReserveFurtherOption />
+    <Application.FlexiReserveOption>264</Application.FlexiReserveOption>
+    <Application.GovernmentSubsidy>0</Application.GovernmentSubsidy>
+    <Application.InsuranceQuoteRequired>0</Application.InsuranceQuoteRequired>
+    <Application.IsCampaign>0</Application.IsCampaign>
+    <Application.IsDebtConsolidation>0</Application.IsDebtConsolidation>
+    <Application.Lapa>0</Application.Lapa>
+    <Application.LoanAmountRequired>850000</Application.LoanAmountRequired>
+    <Application.LoanType>Home Loan</Application.LoanType>
+    <Application.LoanTypeId>6</Application.LoanTypeId>
+    <Application.MultiPlanFacility>0</Application.MultiPlanFacility>
+    <Application.MultiPlanLoanAmount1>0</Application.MultiPlanLoanAmount1>
+    <Application.MultiPlanLoanAmount2>0</Application.MultiPlanLoanAmount2>
+    <Application.MultiPlanLoanTerm1>0</Application.MultiPlanLoanTerm1>
+    <Application.MultiPlanLoanTerm2>0</Application.MultiPlanLoanTerm2>
+    <Application.MultiPlanPurpose1 />
+    <Application.MultiPlanPurpose2 />
+    <Application.NegotiateFixedRate>0</Application.NegotiateFixedRate>
+    <Application.Network>Not Applicable</Application.Network>
+    <Application.NoOfMultiPlanAccounts>0</Application.NoOfMultiPlanAccounts>
+    <Application.OriginatorInvolved>1</Application.OriginatorInvolved>
+    <Application.OriginatorNotifyCellphone>0763337048</Application.OriginatorNotifyCellphone>
+    <Application.OriginatorNotifyOption>Telephone</Application.OriginatorNotifyOption>
+    <Application.OriginatorNotifyPhoneCode>010</Application.OriginatorNotifyPhoneCode>
+    <Application.OriginatorNotifyPhoneNo>5942777</Application.OriginatorNotifyPhoneNo>
+    <Application.OtherGuaranteeAmount>0</Application.OtherGuaranteeAmount>
+    <Application.PhoneDialCodeEstateAgency />
+    <Application.PhoneNumberEstateAgency />
+    <Application.PortionNo>35</Application.PortionNo>
+    <Application.PreferredABSABranch>RANDBURG</Application.PreferredABSABranch>
+    <Application.PreferredABSABranchCode>8446</Application.PreferredABSABranchCode>
+    <Application.PropertyAddressCity>JOHANNESBURG</Application.PropertyAddressCity>
+    <Application.PropertyAddressSuburb>LYNDHURST</Application.PropertyAddressSuburb>
+    <Application.PropertyContactCellphone>0823054142</Application.PropertyContactCellphone>
+    <Application.PropertyContactName>Tester</Application.PropertyContactName>
+    <Application.PropertyContactTelCode>011</Application.PropertyContactTelCode>
+    <Application.PropertyContactTelNo>5561014</Application.PropertyContactTelNo>
+    <Application.PropertyMarketValue>750000</Application.PropertyMarketValue>
+    <Application.PropertyOccupiedBy>Self</Application.PropertyOccupiedBy>
+    <Application.PropertyPurchaseDate>2018-08-10</Application.PropertyPurchaseDate>
+    <Application.PropertyPurchasePrice>1500000</Application.PropertyPurchasePrice>
+    <Application.PropertyRoofConstruction>Clay Tiles - Standard roof</Application.PropertyRoofConstruction>
+    <Application.PropertyStreetName>Tester</Application.PropertyStreetName>
+    <Application.PropertyStreetNo>35</Application.PropertyStreetNo>
+    <Application.PropertyTownship>LYNDHURST</Application.PropertyTownship>
+    <Application.PropertyWallConstruction>Asbestos</Application.PropertyWallConstruction>
+    <Application.RepaymentDay>1</Application.RepaymentDay>
+    <Application.SectionalTitleFlatNo>12</Application.SectionalTitleFlatNo>
+    <Application.SectionalTitleUnitNo>12</Application.SectionalTitleUnitNo>
+    <Application.SellerIDNo />
+    <Application.SellerIdType>Not Available</Application.SellerIdType>
+    <Application.SettleAbsaMortgageLoan>1</Application.SettleAbsaMortgageLoan>
+    <Application.SignLegalDocsProvince />
+    <Application.SignLegalDocsRegion />
+    <Application.SingleHousehold>0</Application.SingleHousehold>
+    <Application.SourceOfFunds>ALLOWANCE</Application.SourceOfFunds>
+    <Application.SourceOfFunds1 />
+    <Application.SourceOfFunds2 />
+    <Application.SourceOfFunds3 />
+    <Application.SourceOfFunds4 />
+    <Application.StandErfNo>35</Application.StandErfNo>
+    <Application.SubmittingBanks>1</Application.SubmittingBanks>
+    <Application.SuretyshipOffered>0</Application.SuretyshipOffered>
+    <Application.TermOfLoan>20</Application.TermOfLoan>
+    <Application.TransferAttorneyPhoneNo>0137124200</Application.TransferAttorneyPhoneNo>
+    <Application.TypeOfInterest>Variable</Application.TypeOfInterest>
+  </Application.Details>
+  <Application.Applicants>
+    <Main.Applicant.Details>
+      <Applicant.ABSACurrentBondAmount>0</Applicant.ABSACurrentBondAmount>
+      <Applicant.ABSACurrentBondToBeCancelled>0</Applicant.ABSACurrentBondToBeCancelled>
+      <Applicant.ABSACurrentRentAmount>0</Applicant.ABSACurrentRentAmount>
+      <Applicant.ABSACurrentRentToBeCancelled>0</Applicant.ABSACurrentRentToBeCancelled>
+      <Applicant.ABSAEmploymentSector>Legal Profession</Applicant.ABSAEmploymentSector>
+      <Applicant.ABSAExecutiveManager>0</Applicant.ABSAExecutiveManager>
+      <Applicant.ABSAIdentificationType>Identity Document</Applicant.ABSAIdentificationType>
+      <Applicant.ABSALifeInsurance>0</Applicant.ABSALifeInsurance>
+      <Applicant.ABSAOccupation>Ophthalmologist</Applicant.ABSAOccupation>
+      <Applicant.ABSAOtherIdentificationType />
+      <Applicant.ABSAPostMatricQualification>Degree</Applicant.ABSAPostMatricQualification>
+      <Applicant.ABSAResidentialStatus>Boarder</Applicant.ABSAResidentialStatus>
+      <Applicant.ABSASAEmployed>0</Applicant.ABSASAEmployed>
+      <Applicant.ABSAStaffMember>0</Applicant.ABSAStaffMember>
+      <Applicant.ABSAWill>0</Applicant.ABSAWill>
+      <Applicant.AddressCityWork>RANDBURG</Applicant.AddressCityWork>
+      <Applicant.AddressCountryWork>SOUTH AFRICA</Applicant.AddressCountryWork>
+      <Applicant.AddressLine1Work>1 Tesst</Applicant.AddressLine1Work>
+      <Applicant.AddressSince>2004-06-15</Applicant.AddressSince>
+      <Applicant.AddressSuburbWork>RANDBURG</Applicant.AddressSuburbWork>
+      <Applicant.CanRetrieveStatement>0</Applicant.CanRetrieveStatement>
+      <Applicant.CanSupplyStatement>0</Applicant.CanSupplyStatement>
+      <Applicant.Cellphone>0823054415</Applicant.Cellphone>
+      <Applicant.CorrespondenceLanguage>Afrikaans</Applicant.CorrespondenceLanguage>
+      <Applicant.CountryOfBirth>SOUTH AFRICA</Applicant.CountryOfBirth>
+      <Applicant.CountryOfPermResidenceCode />
+      <Applicant.CountryPassportIssued />
+      <Applicant.DateJoinedEmployer>2010-02-02</Applicant.DateJoinedEmployer>
+      <Applicant.DateOfBirth>1984-06-12</Applicant.DateOfBirth>
+      <Applicant.DateRehabilitated />
+      <Applicant.DebtConsolidationAmount>0</Applicant.DebtConsolidationAmount>
+      <Applicant.DebtCounsellorName />
+      <Applicant.DebtCounsellorNumber />
+      <Applicant.DeclaredInsolvent>0</Applicant.DeclaredInsolvent>
+      <Applicant.EmailAddress>test@fgmlcom</Applicant.EmailAddress>
+      <Applicant.EmployeeNo />
+      <Applicant.EmployerFaxCode>012</Applicant.EmployerFaxCode>
+      <Applicant.EmployerFaxNo>5514126</Applicant.EmployerFaxNo>
+      <Applicant.EmployerName>Test</Applicant.EmployerName>
+      <Applicant.EmployerTelCode>012</Applicant.EmployerTelCode>
+      <Applicant.EmployerTelNo>5514126</Applicant.EmployerTelNo>
+      <Applicant.EthnicGroup>ASIAN</Applicant.EthnicGroup>
+      <Applicant.ExistingHomeLoanAccountBalance>21000</Applicant.ExistingHomeLoanAccountBalance>
+      <Applicant.ExistingHomeLoanInstitution>AB</Applicant.ExistingHomeLoanInstitution>
+      <Applicant.ExistingHomeLoanIsSettlingHomeLoan>0</Applicant.ExistingHomeLoanIsSettlingHomeLoan>
+      <Applicant.FirstName>Ordinary</Applicant.FirstName>
+      <Applicant.ForeignNational>0</Applicant.ForeignNational>
+      <Applicant.Gender>Female</Applicant.Gender>
+      <Applicant.HasChequeAccount>0</Applicant.HasChequeAccount>
+      <Applicant.HasCreditCard>0</Applicant.HasCreditCard>
+      <Applicant.HomeLanguage>Afrikaans</Applicant.HomeLanguage>
+      <Applicant.HomePhone>5514126</Applicant.HomePhone>
+      <Applicant.HomePhoneCode>012</Applicant.HomePhoneCode>
+      <Applicant.IdentificationNo>8406122990089</Applicant.IdentificationNo>
+      <Applicant.IsInternationalHomeNo>0</Applicant.IsInternationalHomeNo>
+      <Applicant.IsInternationalWorkNo>0</Applicant.IsInternationalWorkNo>
+      <Applicant.IsUnderDebtReview>0</Applicant.IsUnderDebtReview>
+      <Applicant.MaritalStatus>Single</Applicant.MaritalStatus>
+      <Applicant.MarriedStatus>NONE</Applicant.MarriedStatus>
+      <Applicant.MayDoCreditBureauEnquiry>1</Applicant.MayDoCreditBureauEnquiry>
+      <Applicant.Nationality>SOUTH AFRICA</Applicant.Nationality>
+      <Applicant.OccupationStatus>Full Time Employed</Applicant.OccupationStatus>
+      <Applicant.OtherDeductionsDescription />
+      <Applicant.PassportNo />
+      <Applicant.PermanentResident>1</Applicant.PermanentResident>
+      <Applicant.PermanentResidentCountry>SOUTH AFRICA</Applicant.PermanentResidentCountry>
+      <Applicant.PhysicalAddressCity>RANDBURG</Applicant.PhysicalAddressCity>
+      <Applicant.PhysicalAddressCode>2194</Applicant.PhysicalAddressCode>
+      <Applicant.PhysicalAddressLine1>5 Tester</Applicant.PhysicalAddressLine1>
+      <Applicant.PhysicalAddressLine2 />
+      <Applicant.PhysicalAddressSuburb>RANDBURG</Applicant.PhysicalAddressSuburb>
+      <Applicant.PostalAddressCity>RANDBURG</Applicant.PostalAddressCity>
+      <Applicant.PostalAddressCode>2194</Applicant.PostalAddressCode>
+      <Applicant.PostalAddressLine1>5 Tester</Applicant.PostalAddressLine1>
+      <Applicant.PostalAddressLine2 />
+      <Applicant.PostalAddressSuburb>RANDBURG</Applicant.PostalAddressSuburb>
+      <Applicant.PostalCodeWork>2194</Applicant.PostalCodeWork>
+      <Applicant.PreferredContactDelivery>EMail</Applicant.PreferredContactDelivery>
+      <Applicant.RightOfRefusalConsent>2</Applicant.RightOfRefusalConsent>
+      <Applicant.SettleNonABSABondAccount>0</Applicant.SettleNonABSABondAccount>
+      <Applicant.SocialGrant>0</Applicant.SocialGrant>
+      <Applicant.SourceOfIncome>SALARY/WAGES</Applicant.SourceOfIncome>
+      <Applicant.SpouseDetailsAvailable>0</Applicant.SpouseDetailsAvailable>
+      <Applicant.SpouseParticipant>0</Applicant.SpouseParticipant>
+      <Applicant.Surname>Single</Applicant.Surname>
+      <Applicant.TempResident>0</Applicant.TempResident>
+      <Applicant.TempResidentPermitExpiry />
+      <Applicant.TempResidentPermitNo />
+      <Applicant.Title>Miss</Applicant.Title>
+    </Main.Applicant.Details>
+  </Application.Applicants>
+</SubmitApplication.Request>

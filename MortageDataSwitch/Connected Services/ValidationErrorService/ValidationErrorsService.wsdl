@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.unifiedplatform/Comcorp.WebServices/ValidationErrorsService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.unifiedplatform/Comcorp.WebServices/ValidationErrorsService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.unifiedplatform/Comcorp.WebServices/ValidationErrorsService">
+      <s:element name="GetValidationError">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidationErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetValidationErrorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetValidationErrorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetValidationError" />
+  </wsdl:message>
+  <wsdl:message name="GetValidationErrorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetValidationErrorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ValidationErrorsServiceSoap">
+    <wsdl:operation name="GetValidationError">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the logic validations that occured for a specific application.</wsdl:documentation>
+      <wsdl:input message="tns:GetValidationErrorSoapIn" />
+      <wsdl:output message="tns:GetValidationErrorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ValidationErrorsServiceSoap" type="tns:ValidationErrorsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetValidationError">
+      <soap:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/ValidationErrorsService/GetValidationError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ValidationErrorsServiceSoap12" type="tns:ValidationErrorsServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetValidationError">
+      <soap12:operation soapAction="http://www.unifiedplatform/Comcorp.WebServices/ValidationErrorsService/GetValidationError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ValidationErrorsService">
+    <wsdl:port name="ValidationErrorsServiceSoap" binding="tns:ValidationErrorsServiceSoap">
+      <soap:address location="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/ValidationErrorsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ValidationErrorsServiceSoap12" binding="tns:ValidationErrorsServiceSoap12">
+      <soap12:address location="https://uatswitch.comcorp.co.za/UnifiedPlatform.WebServices/ValidationErrorsService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,413 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAD666DD-7F8D-4B59-8243-92FD391153A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MortageDataSwitch</RootNamespace>
+    <AssemblyName>MortageDataSwitch</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\MortageDataSwitch.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\MortageDataSwitch.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=4.6.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.6.0\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.WebApi, Version=4.6.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.WebApi.4.6.0\lib\net45\SimpleInjector.Integration.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\FeedbackService\FeedbackService.disco" />
+    <None Include="Connected Services\FeedbackService\configuration91.svcinfo" />
+    <None Include="Connected Services\FeedbackService\configuration.svcinfo" />
+    <Content Include="Connected Services\FeedbackService\MortageDataSwitch.FeedbackService.ReceiveReplyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\FeedbackService\MortageDataSwitch.FeedbackService.SendRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\FeedbackService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\LiveRepliesService\LiveRepliesService.disco" />
+    <None Include="Connected Services\LiveRepliesService\configuration91.svcinfo" />
+    <None Include="Connected Services\LiveRepliesService\configuration.svcinfo" />
+    <Content Include="Connected Services\LiveRepliesService\MortageDataSwitch.LiveRepliesService.GetLiveRepliesByAppRefResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LiveRepliesService\MortageDataSwitch.LiveRepliesService.GetLiveRepliesByDateRangeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\LiveRepliesService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\LookupDataService\configuration91.svcinfo" />
+    <None Include="Connected Services\LookupDataService\configuration.svcinfo" />
+    <None Include="Connected Services\LookupDataService\LookupDataService.disco" />
+    <Content Include="Connected Services\LookupDataService\MortageDataSwitch.LookupDataService.GetTableValuesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LookupDataService\MortageDataSwitch.LookupDataService.GetTableValuesZippedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LookupDataService\MortageDataSwitch.LookupDataService.GetTableVersionInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\LookupDataService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\SubmissionErrorService\MortageDataSwitch.SubmissionErrorService.GetSubmissionErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\FeedbackService\FeedbackService.wsdl" />
+    <None Include="Connected Services\LiveRepliesService\LiveRepliesService.wsdl" />
+    <None Include="Connected Services\LookupDataService\LookupDataService.wsdl" />
+    <None Include="Connected Services\SubmissionErrorService\SubmissionErrorsService.disco" />
+    <None Include="Connected Services\SubmissionErrorService\configuration91.svcinfo" />
+    <None Include="Connected Services\SubmissionErrorService\configuration.svcinfo" />
+    <None Include="Connected Services\SubmissionErrorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\SubmitService\MortageDataSwitch.SubmitService.SubmitApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SubmissionErrorService\SubmissionErrorsService.wsdl" />
+    <None Include="Connected Services\SubmitService\SubmitService.disco" />
+    <None Include="Connected Services\SubmitService\configuration91.svcinfo" />
+    <None Include="Connected Services\SubmitService\configuration.svcinfo" />
+    <None Include="Connected Services\SubmitService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\SubmitStatusService\MortageDataSwitch.SubmitStatusService.GetApplicationStatusesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SubmitStatusService\MortageDataSwitch.SubmitStatusService.GetApplicationStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SubmitStatusService\SubmitStatusService.disco" />
+    <None Include="Connected Services\SubmitStatusService\configuration91.svcinfo" />
+    <None Include="Connected Services\SubmitStatusService\configuration.svcinfo" />
+    <None Include="Connected Services\SubmitStatusService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\TemplateService\MortageDataSwitch.TemplateService.GetTemplatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\TemplateService\TemplateService.disco" />
+    <None Include="Connected Services\TemplateService\configuration91.svcinfo" />
+    <None Include="Connected Services\TemplateService\configuration.svcinfo" />
+    <None Include="Connected Services\TemplateService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ValidationErrorService\MortageDataSwitch.ValidationErrorService.GetValidationErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\TemplateService\TemplateService.wsdl" />
+    <None Include="Connected Services\ValidationErrorService\ValidationErrorsService.disco" />
+    <None Include="Connected Services\ValidationErrorService\configuration91.svcinfo" />
+    <None Include="Connected Services\ValidationErrorService\configuration.svcinfo" />
+    <None Include="Connected Services\ValidationErrorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Global.asax" />
+    <Content Include="Web.Base.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Connected Services\SubmitService\SubmitService.wsdl" />
+    <None Include="Connected Services\SubmitStatusService\SubmitStatusService.wsdl" />
+    <None Include="Connected Services\ValidationErrorService\ValidationErrorsService.wsdl" />
+    <Content Include="Web.config" />
+    <None Include="Properties\PublishProfiles\Live DataMortageSwitch.pubxml" />
+    <None Include="Properties\PublishProfiles\MortageDataSwitchUAT - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.UAT.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Connected Services\FeedbackService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\LiveRepliesService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\LookupDataService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SubmissionErrorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SubmitService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SubmitStatusService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\TemplateService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ValidationErrorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SecurityAuthenticationFilter.cs" />
+    <Compile Include="Controllers\SwitchController.cs" />
+    <Compile Include="Enums\LiveReplyEnum.cs" />
+    <Compile Include="Enums\LookupEnum.cs" />
+    <Compile Include="Facades\FeedbackServiceFacades.cs" />
+    <Compile Include="Facades\LiveRepliesServiceFacade.cs" />
+    <Compile Include="Facades\LookupDataServiceFacade.cs" />
+    <Compile Include="Facades\SubmitStatusServiceFacade.cs" />
+    <Compile Include="Facades\TemplateServiceFacade.cs" />
+    <Compile Include="Facades\Utils\RequestRootElementNames.cs" />
+    <Compile Include="Facades\Utils\SubmitDispatchRequest.cs" />
+    <Compile Include="Facades\ValidationErrorsServiceFacade.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IFacadeService.cs" />
+    <Compile Include="Interface\IMortageSwitchService.cs" />
+    <Compile Include="Models\Controller\ControllerApplicationStatusRequest.cs" />
+    <Compile Include="Models\Controller\ControllerLiveRepliesByDateRangeRequest.cs" />
+    <Compile Include="Models\Controller\ControllerValidationErrorRequest.cs" />
+    <Compile Include="Models\GetApplicationInfoRequest.cs" />
+    <Compile Include="Models\GetApplicationInfoReply.cs" />
+    <Compile Include="Models\ApplicationStatusRequest.cs" />
+    <Compile Include="Models\ApplicationStatusResponse.cs" />
+    <Compile Include="Models\FeedbackServiceRequest.cs" />
+    <Compile Include="Models\FeedbackServiceResponse.cs" />
+    <Compile Include="Models\GetFeedbackRequest.cs" />
+    <Compile Include="Models\GetFeedbackResponse.cs" />
+    <Compile Include="Models\GetLiveRepliesByDateRangeRequest.cs" />
+    <Compile Include="Models\GetLiveRepliesByDateRangeReply.cs" />
+    <Compile Include="Models\GetTableValuesRequest.cs" />
+    <Compile Include="Models\GetTableValuesResponse.cs" />
+    <Compile Include="Models\GetTableValuesZippedResponse.cs" />
+    <Compile Include="Models\GetTableVersionInfoResponse.cs" />
+    <Compile Include="Models\GetTemplatesRequest.cs" />
+    <Compile Include="Models\GetTemplatesResponse.cs" />
+    <Compile Include="Models\GetValidationErrorRequest.cs" />
+    <Compile Include="Models\GetValidationErrorsReply.cs" />
+    <Compile Include="Models\ProcessBankLiveRepliesRequest.cs" />
+    <Compile Include="Models\ProcessBankLiveRepliesResponse.cs" />
+    <Compile Include="Models\ReplyMessage.cs" />
+    <Compile Include="Models\RequestServiceHeader.cs" />
+    <Compile Include="Models\SubmissionErrorRequest.cs" />
+    <Compile Include="Models\SubmissionErrorResponse.cs" />
+    <Compile Include="Models\SubmitApplicationRequest.cs" />
+    <Compile Include="Models\SubmitApplicationResponse.cs" />
+    <Compile Include="Models\SubmitAutoApplicationRequest.cs" />
+    <Compile Include="Models\SubmitAutoApplicationResponse.cs" />
+    <Compile Include="Models\SubmitDocumentsRequest.cs" />
+    <Compile Include="Models\SubmitDocumentsResponse.cs" />
+    <Compile Include="Models\SubmitService\AbsaApplicationRequest.cs" />
+    <Compile Include="Models\SubmitService\AllApplicationRequest.cs" />
+    <Compile Include="Models\SubmitService\FnbApplicationRequest.cs" />
+    <Compile Include="Models\SubmitService\NedApplicationRequest.cs" />
+    <Compile Include="Models\SubmitService\SbsaApplicationRequest.cs" />
+    <Compile Include="Models\SubmitService\TestCommon.cs" />
+    <Compile Include="Models\ValidationErrorRequest.cs" />
+    <Compile Include="Models\ValidationErrorResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmailProvider.cs" />
+    <Compile Include="Services\FacadeService.cs" />
+    <Compile Include="Services\MortageSwitchService.cs" />
+    <Compile Include="Facades\SubmitApplicationFacade.cs" />
+    <Compile Include="Tools\HeaderTools.cs" />
+    <Compile Include="Tools\LogUtils.cs" />
+    <Compile Include="Tools\ObjectMappingTools.cs" />
+    <Compile Include="Tools\RsaUtils.cs" />
+    <Compile Include="StaticModels\BankSchema.cs" />
+    <Compile Include="Tools\TimeUtils.cs" />
+    <Compile Include="Tools\Utils.cs" />
+    <Compile Include="Tools\XmlUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\MortageDataSwitch - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\FeedbackService\" />
+    <WCFMetadataStorage Include="Connected Services\LiveRepliesService\" />
+    <WCFMetadataStorage Include="Connected Services\LookupDataService\" />
+    <WCFMetadataStorage Include="Connected Services\SubmissionErrorService\" />
+    <WCFMetadataStorage Include="Connected Services\SubmitService\" />
+    <WCFMetadataStorage Include="Connected Services\SubmitStatusService\" />
+    <WCFMetadataStorage Include="Connected Services\TemplateService\" />
+    <WCFMetadataStorage Include="Connected Services\ValidationErrorService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\MortageDataSwitch.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50248/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="BeforeBuild">
+    <TransformXml Source="Web.Base.config" Transform="Web.$(Configuration).config" Destination="Web.config" />
+  </Target>
+</Project>
